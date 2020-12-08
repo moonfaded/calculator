@@ -21,3 +21,4 @@ public class LongDivTest extends AbstractTest{
     Assert.assertEquals(calculator.div(a, b), result);
   }
 }
+test
