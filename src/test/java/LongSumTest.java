@@ -11,7 +11,7 @@ public class LongSumTest extends AbstractTest{
     };
   }
 
-  @Test(dataProvider = "TestData", groups = "Math")
+  @Test(dataProvider = "TestData", groups = {"Math"})
   public void longSumTest(long a, long b, long result) {
     Assert.assertEquals(calculator.sum(a, b), result);
   }

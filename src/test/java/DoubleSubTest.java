@@ -11,7 +11,7 @@ public class DoubleSubTest extends AbstractTest{
     };
   }
 
-  @Test(dataProvider = "TestData", groups = "Math")
+  @Test(dataProvider = "TestData", groups = {"Math"})
   public void doubleSubTest(double a, double b, double result) {
     Assert.assertEquals(calculator.sub(a, b), result, 0.001);
   }

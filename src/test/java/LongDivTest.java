@@ -11,7 +11,7 @@ public class LongDivTest extends AbstractTest{
     };
   }
 
-  @Test(dataProvider = "TestData", groups = "Math")
+  @Test(dataProvider = "TestData", groups = {"Math"})
   public void longDivTest(long a, long b, long result) {
     Assert.assertEquals(calculator.div(a, b), result);
   }

@@ -11,7 +11,7 @@ public class DoubleDivTest extends AbstractTest{
     };
   }
 
-  @Test(dataProvider = "TestData", groups = "Math")
+  @Test(dataProvider = "TestData", groups = {"Math"})
   public void doubleDivTest(double a, double b, double result) {
     Assert.assertEquals(calculator.div(a, b), result, 0.001);
   }

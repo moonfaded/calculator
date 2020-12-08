@@ -11,7 +11,7 @@ public class DoubleTgTest extends AbstractTest{
     };
   }
 
-  @Test(dataProvider = "TestData", groups = "Math")
+  @Test(dataProvider = "TestData", groups = {"Math"})
   public void doubleTgTest(double a, double result) {
     Assert.assertEquals(calculator.tg(a), result, 0.001);
   }

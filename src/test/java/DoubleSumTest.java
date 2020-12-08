@@ -11,7 +11,7 @@ public class DoubleSumTest extends AbstractTest{
     };
   }
 
-  @Test(dataProvider = "TestData", groups = "Math")
+  @Test(dataProvider = "TestData", groups = {"Math"})
   public void doubleSumTest(double a, double b, double result) {
     Assert.assertEquals(calculator.sum(a, b), result, 0.001);
   }

@@ -11,7 +11,7 @@ public class DoubleCosTest extends AbstractTest{
     };
   }
 
-  @Test(dataProvider = "TestData", groups = "Math")
+  @Test(dataProvider = "TestData", groups = {"Math"})
   public void doubleCosTest(double a, double result) {
     Assert.assertEquals(calculator.cos(a), result, 0.001);
   }

@@ -1,8 +1,12 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="All tests" parallel="classes" thread-count="10">
-    <test name="All tests">
-        <packages>
-            <package name="src/test/java"/>
-        </packages>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="All" verbose="1">
+    <test name="Calculator" parallel="classes" thread-count="6">
+
+        <classes>
+            <class name="DoubleDivTest"/>
+            <class name="DoubleSubTest"/>
+        </classes>
     </test>
+
 </suite>

@@ -11,7 +11,7 @@ public class LongMultTest extends AbstractTest{
     };
   }
 
-  @Test(dataProvider = "TestData", groups = "Math")
+  @Test(dataProvider = "TestData", groups = {"Math"})
   public void longMultTest(long a, long b, long result) {
     Assert.assertEquals(calculator.mult(a, b), result);
   }

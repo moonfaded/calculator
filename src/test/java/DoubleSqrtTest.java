@@ -11,7 +11,7 @@ public class DoubleSqrtTest extends AbstractTest{
     };
   }
 
-  @Test(dataProvider = "TestData", groups = "Math")
+  @Test(dataProvider = "TestData", groups = {"Math"})
   public void doubleSqrtTest(double a, double result) {
     Assert.assertEquals(calculator.sqrt(a), result, 0.001);
   }

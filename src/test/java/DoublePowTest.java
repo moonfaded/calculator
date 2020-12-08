@@ -11,7 +11,7 @@ public class DoublePowTest extends AbstractTest{
     };
   }
 
-  @Test(dataProvider = "TestData", groups = "Math")
+  @Test(dataProvider = "TestData", groups = {"Math"})
   public void doublePowTest(double a, double b, double result) {
     Assert.assertEquals(calculator.pow(a, b), result, 0.001);
   }
