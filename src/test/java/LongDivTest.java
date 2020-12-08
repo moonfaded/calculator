@@ -7,7 +7,12 @@ public class LongDivTest extends AbstractTest{
   @DataProvider(name = "TestData")
   public Object[][] TestData() {
     return new Object[][] {
-            {24, 4, 6}
+            {1, 0, 0},
+            {169, 13, 13},
+            {-50, -10, 5},
+            {-100, 25, -4},
+            {1, -1, -1},
+            {1, 3, 0}
     };
   }
 

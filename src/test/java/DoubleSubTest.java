@@ -7,7 +7,11 @@ public class DoubleSubTest extends AbstractTest{
   @DataProvider(name = "TestData")
   public Object[][] TestData() {
     return new Object[][] {
-            {5.2, 4.6, 0.6}
+            {1.01, 2.01, -1},
+            {0.0, 0, 0.0},
+            {-50852.252, -23.23, -50829.022},
+            {-1.0, 2.5, -3.5},
+            {0.1, -0.1, 0.2}
     };
   }
 

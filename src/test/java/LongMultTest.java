@@ -7,7 +7,11 @@ public class LongMultTest extends AbstractTest{
   @DataProvider(name = "TestData")
   public Object[][] TestData() {
     return new Object[][] {
-            {5, 4, 20}
+            {1, 0, 0},
+            {0, 0, 0},
+            {-5, -10, 50},
+            {-10, 25, -250},
+            {1, -1, -1}
     };
   }
 

@@ -7,7 +7,10 @@ public class BooleanIsNegativeTest extends AbstractTest{
   @DataProvider(name = "TestData")
   public Object[][] TestData() {
     return new Object[][] {
-            {-5}
+            {-1},
+            {154},
+            {0},
+            {-25}
     };
   }
 

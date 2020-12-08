@@ -7,7 +7,11 @@ public class LongSumTest extends AbstractTest{
   @DataProvider(name = "TestData")
   public Object[][] TestData() {
     return new Object[][] {
-            {5, 4, 9}
+            {0, 0, 0},
+            {5252, 2323, 7575},
+            {-25, -10, -35},
+            {-10, 25, 15},
+            {2, -8, -6}
     };
   }
 
