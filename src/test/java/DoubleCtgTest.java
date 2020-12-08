@@ -11,7 +11,7 @@ public class DoubleCtgTest extends AbstractTest{
     };
   }
 
-  @Test(dataProvider = "TestData", groups = {"Math"})
+  @Test(dataProvider = "TestData")
   public void doubleCtgTest(double a, double result) {
     Assert.assertEquals(calculator.ctg(a), result, 0.001);
   }

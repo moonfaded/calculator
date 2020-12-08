@@ -6,12 +6,12 @@ public class AbstractTest {
 
   protected Calculator calculator;
 
-  @BeforeClass
+  @BeforeClass (alwaysRun = true)
   public void setUp() {
     calculator = new Calculator();
   }
 
-  @AfterClass
+  @AfterClass (alwaysRun = true)
   public void tearDown() {
     calculator = null;
   }

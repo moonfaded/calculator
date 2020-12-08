@@ -11,7 +11,7 @@ public class BooleanIsNegativeTest extends AbstractTest{
     };
   }
 
-  @Test(dataProvider = "TestData", groups = {"Math"})
+  @Test(dataProvider = "TestData")
   public void booleanIsNegative(long a) {
     Assert.assertTrue(calculator.isNegative(a));
   }

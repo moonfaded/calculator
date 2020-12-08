@@ -11,7 +11,7 @@ public class BooleanIsPositiveTest extends AbstractTest{
     };
   }
 
-  @Test(dataProvider = "TestData", groups = {"Math"})
+  @Test(dataProvider = "TestData")
   public void booleanIsPositive(long a) {
     Assert.assertTrue(calculator.isPositive(a));
   }

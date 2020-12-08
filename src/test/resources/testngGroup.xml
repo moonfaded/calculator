@@ -3,18 +3,18 @@
 <suite name="All" verbose="1">
     <test name="Calculator" parallel="classes" thread-count="6">
 
+        <groups>
+            <run>
+                <include name = "Math" />
+            </run>
+        </groups>
+
         <classes>
-            <class name="BooleanIsNegativeTest"/>
-            <class name="BooleanIsPositiveTest"/>
-            <class name="DoubleCosTest"/>
-            <class name="DoubleCtgTest"/>
             <class name="DoubleDivTest"/>
             <class name="DoublePowTest"/>
-            <class name="DoubleSinTest"/>
             <class name="DoubleSqrtTest"/>
             <class name="DoubleSubTest"/>
             <class name="DoubleSumTest"/>
-            <class name="DoubleTgTest"/>
             <class name="LongDivTest"/>
             <class name="LongMultTest"/>
             <class name="LongSumTest"/>

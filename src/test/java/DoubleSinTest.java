@@ -11,7 +11,7 @@ public class DoubleSinTest extends AbstractTest{
     };
   }
 
-  @Test(dataProvider = "TestData", groups = {"Math"})
+  @Test(dataProvider = "TestData")
   public void doubleSinTest(double a, double result) {
     Assert.assertEquals(calculator.sin(a), result, 0.001);
   }
